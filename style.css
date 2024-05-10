@@ -381,6 +381,7 @@ details {
   .brand {
     font-size: 30px;
   }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -398,7 +399,11 @@ details {
     font-size: 25px;
   }
   .div-brand {
-    margin-left: 100px;
+    margin-left: 40px;
+  }
+  .button {
+    padding: .44rem 0.5rem;
+    padding-left: 8px;
   }
 }
 
