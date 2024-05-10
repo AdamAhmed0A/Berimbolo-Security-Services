@@ -20,8 +20,13 @@ nav{
   width: 100%;
   height: max-content;
   background: #eee;
+  align-items: center;
 }
 
+.mob-nav a {
+  text-align: center;
+  
+}
 
 .brand {
    font-size: 40px;
@@ -374,6 +379,9 @@ details {
   .div-brand {
     margin-left: 180px;
   }
+  .button {
+
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -393,19 +401,7 @@ details {
 }
 
 
-@media screen and (max-width: 640px) {
-  /* Small screens */
-  .brand {
-    font-size: 25px;
-  }
-  .div-brand {
-    margin-left: 40px;
-  }
-  .button {
-    padding: .44rem 0.5rem;
-    padding-left: 8px;
-  }
-}
+
 
 @media screen and (max-width: 1024px){
   .button {
@@ -421,3 +417,16 @@ details {
   }
 }
 
+@media screen and (max-width: 640px) {
+  /* Small screens */
+  .brand {
+    font-size: 23px;
+  }
+  .div-brand {
+    margin-left: 23px;
+  }
+  .button {
+    padding: .44rem 0.5rem;
+    padding-left: 8px;
+  }
+}
