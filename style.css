@@ -4,16 +4,34 @@
    box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* nav section */
 nav{
    z-index: 10;
 }
+
+.mob-nav {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  height: max-content;
+  background: #eee;
+}
+
+
 .brand {
    font-size: 40px;
    font-family: "Whisper", cursive;
    font-weight: 800;
    font-style: normal;
 }
+
+
+
 
 .button {
    line-height: 1;
@@ -347,3 +365,54 @@ details {
  
 
  
+
+ @media screen and (min-width: 640px) {
+  /* Small screens */
+  .brand {
+    font-size: 25px;
+  }
+  .div-brand {
+    margin-left: 180px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* Medium screens */
+  .brand {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Large screens */
+  .brand {
+    font-size: 40px;
+  }
+ 
+}
+
+
+@media screen and (max-width: 640px) {
+  /* Small screens */
+  .brand {
+    font-size: 25px;
+  }
+  .div-brand {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .button {
+    padding: .55rem 1.2rem;
+    padding-left: 15px;
+
+  }
+}
+@media screen and (max-width: 768px){
+  .button {
+    padding: .60rem 1rem;
+    padding-left: 13px;
+  }
+}
+
