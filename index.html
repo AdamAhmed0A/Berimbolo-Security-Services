@@ -10,15 +10,74 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Ensure that the dropdown menu is initially hidden */
+    #navbar-menu {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>
 
+
+  <!-- <nav class="navbar bg-white fixed top-0 w-full transition-all duration-500 ease-in-out">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        
+        <div class="flex-1 flex items-center justify-start">
+        
+          <a href="#" class="font-bold text-xl">Berimbolo Security</a>
+        </div>
+
+      
+        <div class="">
+          <button id="menu-toggle" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+
+       
+        <div class="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-4">
+          <a href="#home" class="px-3 py-2 text-sm text-gray-500 hover:text-gray-700">Home</a>
+          <a href="#products" class="px-3 py-2 text-sm text-gray-500 hover:text-gray-700">Products</a>
+          <a href="#faqs" class="px-3 py-2 text-sm text-gray-500 hover:text-gray-700">FAQs</a>
+          <a href="#about" class="px-3 py-2 text-sm text-gray-500 hover:text-gray-700">About us</a>
+          
+          <a href="#" class="px-3 py-2 text-sm text-purple-500 hover:text-purple-700">Custom Deal</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <div id="navbar-menu" class="lg:hidden">
+      <a href="#home" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Home</a>
+      <a href="#products" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Products</a>
+      <a href="#faqs" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">FAQs</a>
+      <a href="#about" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About us</a>
+      <a href="#" class="block px-4 py-2 text-sm text-purple-500 hover:bg-gray-100">Custom Deal</a>
+    </div>
+  </nav> -->
+
+
   <nav class="navbar bg-gray-100 fixed top-0 w-full transition-all duration-500 ease-in-out">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
+  
+        <!-- Hamburger icon for mobile -->
+        <div class="lg:hidden mx-3">
+          <button id="menu-toggle" class="text-gray-500 hover:text-gray-700 focus:outline-none focus:text-gray-700">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+  
         <!-- Left side of the navbar -->
-        <div class="flex-1 flex justify-start">
+        <div class="hidden lg:flex lg:space-x-4 flex-1 flex justify-start">
           <a href="#home"
             class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm mx-5 font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">Home</a>
           <a href="#products"
@@ -29,10 +88,21 @@
             class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm mx-5 font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">About
             us</a>
         </div>
-        <!--  brand logo -->
-        <div class="flex-initial">
+  
+        <!-- Mobile menu toggle -->
+        <div id="navbar-menu" class="lg:hidden mob-nav">
+          <a href="#home" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Home</a>
+          <a href="#products" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Products</a>
+          <a href="#faqs" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">FAQs</a>
+          <a href="#about" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">About us</a>
+          <a href="#" class="block px-4 py-2 text-sm text-purple-500 hover:bg-gray-100">Custom Deal</a>
+        </div>
+  
+        <!-- Brand logo -->
+        <div class="flex-initial div-brand">
           <a href="#" class="font-bold text-xl brand">Berimbolo Security</a>
         </div>
+  
         <!-- Right side of the navbar -->
         <div class="flex-1 flex justify-end">
           <a style="--clr: #7808d0" class="button" href="#">
@@ -43,7 +113,7 @@
                   d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z">
                 </path>
               </svg>
-
+  
               <svg class="button__icon-svg  button__icon-svg--copy" xmlns="http://www.w3.org/2000/svg" width="10"
                 fill="none" viewBox="0 0 14 15">
                 <path fill="currentColor"
@@ -57,6 +127,8 @@
       </div>
     </div>
   </nav>
+  
+  
 
   <main class="bg-gray-200 mt-16" id="home">
     <div class=" max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
@@ -369,7 +441,17 @@
           Security</span></a><span class="text-gray-600 dark:text-gray-400 text-sm">© Copyright 2024. All Rights
         Reserved.</span></div>
   </footer>
-
+<script>
+    // Toggle the dropdown menu on small screens
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      var menu = document.getElementById('navbar-menu');
+      if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'block';
+      }
+    });
+  </script>
   <script src="script.js"></script>
 </body>
 
