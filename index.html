@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berimbolo Security</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Whisper&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav class="navbar bg-gray-100 fixed top-0 w-full transition-all duration-500 ease-in-out">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Left side of the navbar -->
+        <div class="flex-1 flex justify-start">
+          <a href="#home"
+            class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm mx-5 font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">Home</a>
+          <a href="#products"
+            class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm mx-5 font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">Products</a>
+          <a href="#faqs"
+            class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm mx-5 font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">FAQs</a>
+          <a href="#about"
+            class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm mx-5 font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">About
+            us</a>
+        </div>
+        <!--  brand logo -->
+        <div class="flex-initial">
+          <a href="#" class="font-bold text-xl brand">Berimbolo Security</a>
+        </div>
+        <!-- Right side of the navbar -->
+        <div class="flex-1 flex justify-end">
+          <a style="--clr: #7808d0" class="button" href="#">
+            <span class="button__icon-wrapper">
+              <svg width="10" class="button__icon-svg" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 14 15">
+                <path fill="currentColor"
+                  d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z">
+                </path>
+              </svg>
+
+              <svg class="button__icon-svg  button__icon-svg--copy" xmlns="http://www.w3.org/2000/svg" width="10"
+                fill="none" viewBox="0 0 14 15">
+                <path fill="currentColor"
+                  d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z">
+                </path>
+              </svg>
+            </span>
+            Custome Deal
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="bg-gray-200 mt-16" id="home">
+    <div class=" max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <div class="bg-gray-200 flex flex-col lg:flex-row justify-between items-center">
+        <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
+          <img src="https://i.ibb.co/sVqYmS2/Illustration.png" alt="Illustration" class="w-full">
+        </div>
+        <div class="w-full lg:w-1/2 lg:ml-10">
+          <h1 class="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">Comprehensive Security Solutions Tailored for
+            You. </h1>
+          <p class="text-lg text-gray-600 mb-6">
+            Discover affordable, cutting-edge security systems designed to protect what matters most
+          </p>
+
+          <button class="animated-button">
+            <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+              </path>
+            </svg>
+            <a href="#products"> <span class="text">Learn More &nbsp;</span></a>
+            <span class="circle"></span>
+            <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+              </path>
+            </svg>
+          </button>
+
+        </div>
+      </div>
+  </main>
+
+
+
+  <main class="mt-16" id="products">
+    <!-- Product Cards -->
+    <div class="flex flex-wrap justify-center ">
+      <!-- Basic Security Package -->
+      <div class="p-4 lg:w-1/4 md:w-1/2">
+        <div class="drop-shadow-xl overflow-hidden rounded-xl bg-gray-800 text-white p-6">
+          <h2 class="text-lg font-semibold title-font mb-2 text-center color-change animate-character">Basic</h2>
+          <p class="flex items-center justify-center my-6 space-x-2 font-bold"><span
+              class="text-lg line-through dark:text-gray-300">&nbsp;$20&nbsp;</span><span
+              class="pb-2 text-4xl">$16</span><span class="text-lg">/mo</span></p>
+          <ul class="list-disc pl-5 space-y-2">
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark:text-blue-300"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+              1 x Alarm System
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark:text-blue-300"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+              1 x CCTV Camera
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark:text-blue-300"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+              Local CCTV Footage Storage
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark:text-blue-300"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+              NOT Centrally Monitored
+            </li>
+          </ul>
+          <button class="mt-4 learn-more ">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Learn More</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Standard package -->
+
+      <div class="p-4 lg:w-1/4 md:w-1/2">
+        <div class="drop-shadow-xl overflow-hidden rounded-xl bg-gray-800 text-white p-6">
+          <h2 class="text-lg font-semibold title-font mb-2 text-center color-change animate-character">Standard</h2>
+          <p class="flex items-center justify-center my-6 space-x-2 font-bold"><span
+              class="text-lg line-through dark:text-gray-300">&nbsp;$35&nbsp;</span><span
+              class="pb-2 text-4xl">$25</span><span class="text-lg">/mo</span></p>
+          <ul class="list-disc pl-5 space-y-2">
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark:text-blue-300"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+              1 x Alarm System
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark:text-blue-300"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+              2 x CCTV Camera
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark:text-blue-300"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+              Online, local CCTV storage
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark:text-blue-300"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+              NOT Centrally Monitored
+            </li>
+          </ul>
+          <button class="mt-4 learn-more ">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Learn More</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Delux -->
+      <!-- Basic Security Package -->
+      <div class="p-4 lg:w-1/4 md:w-1/2">
+        <div class="drop-shadow-xl overflow-hidden rounded-xl bg-gray-800 text-white p-6">
+          <h2 class="text-lg font-semibold title-font mb-2 color-change animate-character text-center">Delux</h2>
+          <p class="flex items-center justify-center my-6 space-x-2 font-bold text-center"><span
+              class="text-lg line-through dark:text-gray-300">&nbsp;$54&nbsp;</span><span
+              class="pb-2 text-4xl">$40</span><span class="text-lg">/mo</span></p>
+          <ul class="list-disc pl-5 space-y-2">
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark:text-blue-300"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+              1 x Alarm System
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark:text-blue-300"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+              4 x CCTV Camera
+            </li>
+            <li class="flex items-center w-full">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark:text-blue-300"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+              Online, local CCTV storage
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark:text-blue-300"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+              Centrally monitored
+            </li>
+          </ul>
+          <button class="mt-4 learn-more ">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">Learn More</span>
+          </button>
+        </div>
+      </div>
+      <!-- Repeat for other packages... -->
+    </div>
+  </main>
+
+  <section class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100" id="faqs">
+    <div class="container flex flex-col justify-center px-4 py-8 mx-auto md:p-8">
+      <h2 class="text-2xl font-semibold sm:text-4xl">Frequently Asked Questions</h2>
+      <p class="mt-4 mb-8 text-gray-600 dark:text-gray-400">
+        These frequently asked questions cover a range of topics related to general help and advice on security,
+        providing valuable information for individuals and businesses looking to enhance their security measures.</p>
+      <div class="space-y-4">
+        <details class="w-full border rounded-lg cursor-pointer">
+          <summary class="px-4 py-6 focus:outline-none focus-visible:ring-cyan-600 focus-visible:dark:ring-cyan-400">
+            What are some basic security measures I can implement at home or in my business?</summary>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">• Installing sturdy locks on doors and
+            windows.</p>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">• Using security cameras and alarm
+            systems.</p>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">• Securing valuable items in safes.</p>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">• Ensuring proper lighting around the
+            property.</p>
+        </details>
+        <details class="w-full border rounded-lg cursor-pointer">
+          <summary class="px-4 py-6 focus:outline-none focus-visible:ring-cyan-600 focus-visible:dark:ring-cyan-400">
+            How can I protect my digital assets and data from cyber threats?</summary>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">
+            • Using strong, unique passwords for online accounts.</p>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">
+            • Enabling two-factor authentication where possible.</p>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">
+            • Keeping software and operating systems updated.</p>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">
+            • Being cautious of phishing emails and suspicious links.</p>
+        </details>
+        <details class="w-full border rounded-lg cursor-pointer">
+          <summary class="px-4 py-6 focus:outline-none focus-visible:ring-cyan-600 focus-visible:dark:ring-cyan-400">
+            What should I do in case of a security breach or emergency?
+          </summary>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">
+            • Contacting emergency services immediately if there's a threat to personal safety.</p>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">• Reporting security incidents to the
+            appropriate authorities.</p>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">• Implementing incident response plans
+            for businesses to mitigate the impact of breaches.</p>
+        </details>
+        <details class="w-full border rounded-lg cursor-pointer">
+          <summary class="px-4 py-6 focus:outline-none focus-visible:ring-cyan-600 focus-visible:dark:ring-cyan-400">
+            What are some common security risks and vulnerabilities to be aware of?</summary>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">• Physical security risks like theft,
+            vandalism, or unauthorized access.</p>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">• Cybersecurity risks such as malware
+            infections, data breaches, and phishing attacks.</p>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">• Social engineering tactics used to
+            manipulate individuals into revealing sensitive information.</p>
+        </details>
+        <details class="w-full border rounded-lg cursor-pointer">
+          <summary class="px-4 py-6 focus:outline-none focus-visible:ring-cyan-600 focus-visible:dark:ring-cyan-400">How
+            can I improve the security of my home or business network?</summary>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4 dark:text-gray-400">• Using firewalls and antivirus software
+            to protect against malware.</p>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">• Securing Wi-Fi networks with strong
+            passwords and encryption.</p>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">• Regularly updating router firmware and
+            disabling unnecessary network services.</p>
+        </details>
+        <details class="w-full border rounded-lg cursor-pointer">
+          <summary class="px-4 py-6 focus:outline-none focus-visible:ring-cyan-600 focus-visible:dark:ring-cyan-400">
+            What are some best practices for securing sensitive information and documents?</summary>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">• Implementing access controls to limit
+            who can view or edit sensitive data.</p>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">• Encrypting confidential files and
+            communications.</p>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">• Properly disposing of paper documents
+            and electronic devices containing sensitive information.</p>
+        </details>
+        <details class="w-full border rounded-lg cursor-pointer">
+          <summary class="px-4 py-6 focus:outline-none focus-visible:ring-cyan-600 focus-visible:dark:ring-cyan-400">How
+            can I assess and mitigate security risks specific to my home or business?</summary>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">• Conducting regular security risk
+            assessments to identify vulnerabilities.</p>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">• Developing and implementing security
+            policies and procedures.</p>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">• Training employees or family members
+            on security awareness and best practices.</p>
+        </details>
+        <details class="w-full border rounded-lg cursor-pointer">
+          <summary class="px-4 py-6 focus:outline-none focus-visible:ring-cyan-600 focus-visible:dark:ring-cyan-400">
+            What role does surveillance play in enhancing security?</summary>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">• Acting as a deterrent to potential
+            intruders or criminals.</p>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">• Providing evidence in case of security
+            incidents or disputes.</p>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">• Allowing for remote monitoring of
+            premises and assets.</p>
+        </details>
+        <details class="w-full border rounded-lg cursor-pointer">
+          <summary class="px-4 py-6 focus:outline-none focus-visible:ring-cyan-600 focus-visible:dark:ring-cyan-400">How
+            can I stay informed about the latest security threats and trends?</summary>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">• Subscribing to security newsletters,
+            blogs, or forums.</p>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">• Following reputable security
+            organizations and experts on social media.</p>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">• Participating in security training and
+            conferences to stay up-to-date.</p>
+        </details>
+        <details class="w-full border rounded-lg cursor-pointer">
+          <summary class="px-4 py-6 focus:outline-none focus-visible:ring-cyan-600 focus-visible:dark:ring-cyan-400">
+            What should I consider when choosing security products or services for my home or business?</summary>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">• Assessing the specific security needs
+            and risks of your property or organization.</p>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">• Researching and comparing different
+            products or service providers.</p>
+          <p class="px-4 py-6 pt-0 ml-4 -mt-4  dark:text-gray-400">• Checking for certifications,
+            warranties, and customer reviews before making a decision.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- about us section -->
+  <section class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 py-12" id="about">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-semibold mb-4">About Us</h2>
+        <p class="text-gray-600 dark:text-gray-400">
+          Pioneering security solutions with a commitment to excellence.
+        </p>
+      </div>
+      <div class="flex flex-wrap justify-center items-center">
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md text-center">
+            <h3 class="text-xl font-semibold mb-2">Our Mission</h3>
+            <p class="text-gray-600 dark:text-gray-400">
+              To provide innovative and reliable security systems that ensure the safety and peace of mind for our
+              clients.
+            </p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md text-center">
+            <h3 class="text-xl font-semibold mb-2">Our Story</h3>
+            <p class="text-gray-600 dark:text-gray-400">
+              Founded in 2024, our journey has been driven by a passion for technology and a dedication to customer
+              service.
+            </p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md text-center">
+            <h3 class="text-xl font-semibold mb-2">Why Choose Us?</h3>
+            <ul class="text-gray-600 dark:text-gray-400 list-disc list-inside">
+              <li>Expertise in cutting-edge security tech</li>
+              <li>Customized solutions for every client</li>
+              <li>24/7 customer support and monitoring</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- footer -->
+  <footer class="px-6 py-3  bottom-0 left-0  w-full ">
+    <div class="grid place-items-center gap-4 font-semibold"><a href="/Unit_6_Task_Two"><span
+          class="text-gray-600 dark:text-gray-200 text-center block hover:text-blue-400">Berimbolo
+          Security</span></a><span class="text-gray-600 dark:text-gray-400 text-sm">© Copyright 2024. All Rights
+        Reserved.</span></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
